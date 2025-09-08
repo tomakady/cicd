@@ -30,7 +30,7 @@ jobs:
       - name: run tests
         run: |
           cd matrix-builds
-          python -m unittest discover
+          python -m discover
 
       - name: notify us of success
         run: echo "All tests passed on Python ${{ matrix.python-version }}!"
